@@ -6,7 +6,6 @@
 
 * [Descrição](#Descrição)
 * [Features](#Features)   
-* [Instalação](#Instalação)
 * [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
 * [Autora](#Autora)
 

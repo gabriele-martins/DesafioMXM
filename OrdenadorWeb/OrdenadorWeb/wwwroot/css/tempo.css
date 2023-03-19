@@ -1,0 +1,28 @@
+﻿#tempo-download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tempo-download a, #tempo-download input {
+    width: 12em;
+    height: 2.3em;
+    background-color: #f4563b;
+    color: white;
+    border: none;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#tempo-download p {
+    font-size: larger;
+    padding: 2em;
+}

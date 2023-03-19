@@ -1,0 +1,15 @@
+﻿@page "~/tempo"
+@model OrdenadorWeb.Pages.Tempo
+@{
+    ViewData["Title"] = "Tempo de Processamento";
+}
+
+<div id="tempo-download">
+    <a asp-page="Index">VOLTAR</a>
+
+    <p>Tempo de Processamento Final: @Model.TempoDeProcessamento segundos.</p>
+
+    <form method="post" enctype="multipart/form-data">
+        <input id="submit" type="submit" value="DOWNLOAD" class="btn btn-info"/>
+    </form>
+</div>

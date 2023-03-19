@@ -1,0 +1,46 @@
+﻿@page "~/"
+@model Index
+@{
+    ViewData["Title"] = "Formulário";
+}
+
+<form id="uploadExcel" method="post" enctype="multipart/form-data">
+    <div id="div-upload">
+        <p>Selecione seu arquivo EXCEL:</p>
+        <label for="excelUpload">ESCOLHA O ARQUIVO</label>
+        <input id="excelUpload" type="file" name="arquivoExcel" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required/>
+    </div>
+
+    <div class="mensagem-erro">@ViewData["MensagemDeErroExcel"]</div>
+
+    <div id="div-criterio">
+        <p>Escolha o critério de ordenação:</p>
+        <div>
+            <input id="nome" type="radio" name="criterioDeOrdenacao" value="Nome">
+            <label for="nome">Nome</label>
+        </div>
+        <div>
+            <input id="idade" type="radio" name="criterioDeOrdenacao" value="Idade">
+            <label for="idade">Idade</label>
+        </div>
+        <div class="mensagem-erro">@ViewData["MensagemDeErroCriterio"]</div>
+    </div>
+
+    <div id="div-tipo">
+        <p>Escolha o tipo de ordenação:</p>
+        <div>
+            <input id="crescente" type="radio" name="tipoDeOrdenacao" value="Crescente">
+            <label for="crescente">Crescente</label>
+        </div>
+        <div>
+            <input id="decrescente" type="radio" name="tipoDeOrdenacao" value="Decrescente">
+            <label for="decrescente">Decrescente</label>
+        </div>
+        <div class="mensagem-erro">@ViewData["MensagemDeErroTipo"]</div>
+    </div>
+
+    <div id="div-submit">
+        <label for="submit">Clique no botão abaixo para obter sua planilha ordenada!</label>
+        <input id="submit" type="submit" value="ENVIAR" />
+    </div>
+</form>

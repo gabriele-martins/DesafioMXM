@@ -1,0 +1,63 @@
+﻿#uploadExcel div{
+    padding: 0.2em;
+}
+
+#uploadExcel .mensagem-erro {
+    padding: 0.5em;
+    color: #f4563b;
+}
+
+#div-upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-upload p {
+    font-size: larger;
+    padding-bottom: 0.4em;
+}
+
+#div-upload label {
+    width: 12em;
+    height: 2.3em;
+    background-color: #f4563b;
+    color: white;
+    border: none;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-upload #excelUpload {
+    display: none;
+}
+
+#div-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-submit label{
+    font-size: larger;
+    padding-bottom: 0.4em;
+}
+
+#div-submit #submit {
+    width: 6em;
+    height: 2em;
+    background-color: #f4563b;
+    color: white;
+    border: none;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+}

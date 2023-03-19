@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - OrdenadorWeb</title>
+        <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" /> 
+        <link rel="stylesheet" href="~/css/tempo.css" asp-append-version="true" /> 
+    </head>
+    <body>
+        <header>
+            <h1>ORDENAR EXCEL</h1>
+            <h2>Ordene sua tabela EXCEL de Nomes e Idades de acordo com suas preferências.</h2>
+        </header>
+
+        <main>
+            @RenderBody()
+        </main>
+
+        <footer>
+            &copy; 2023 Gabriele Martins
+        </footer>
+    </body>
+</html>
